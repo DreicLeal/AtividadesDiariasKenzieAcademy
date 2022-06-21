@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Tech</title>
+    <link rel="icon" href="https://kenzie.com.br/favicon.jpeg">
+</head>
+<body>
+
+    <header>
+        <h1> Bem vindo a Kenzie Tech</h1>
+        <p>Você tem a oportunidade de se inscrever no maior evento de tecnologia da região com <strong>duas semanas inteiras de conteudo totalmente online e gratuita!</strong> Faça sua inscrição preenchendo os campos abaixo e se inscreva em nossa newsletter para receber atualizações</p>
+    </header>
+
+<form>
+    
+    <p><label for="nome">Nome</label></p>
+    <input id="nome" name="nome" placeholder="Nome Sobrenome" required>
+    
+    <p><label for="email">E-mail</label></p>
+    <input type="email" id="email" name="email" placeholder="example@provedor.com..." required>
+   
+    <p><label for="descricao">Porque você deseja participar do nosso evento?</label></p>
+    <textarea placeholder="Escreva aqui o que lhe motivou a se inscrever na Kenzie Tech." name="descricao" id="descricao" cols="40" rows="10"></textarea>
+
+    <p><label for="modulo">Módulo</label></p>
+    <select id="modulo" name="modulos" required >
+        <option value="">Selecione o modulo</option>
+        <option value="M1">Modulo 1</option>
+        <option value="M2">Modulo 2</option>
+        <option value="M3">Modulo 3</option>
+        <option value="M4">Modulo 4</option>
+        <option value="M5">Modulo 5</option>
+        <option value="M6">Modulo 6</option>
+
+    </select>
+    
+    <p><label for="senha">Senha</label></p>
+    <input id="senha" name="senha" type="password" placeholder="Digite uma senha" required>
+
+    <p><label for="senhaRepete">Senha</label></p>
+    <input id="senhaRepete" name="senhaR" type="password" placeholder="Digite a senha novamente" required>
+
+    <p>Deseja receber as novidade do evento no seu e-mail?</p>
+
+    <label>Sim</label>
+    <input type="radio" name="sim">
+    <label>Não</label>
+    <input type="radio" name="nao">
+
+    <p><button type="submit">Enviar formulário</button></p>
+
+    
+</form>
+
+</body>
+</html>

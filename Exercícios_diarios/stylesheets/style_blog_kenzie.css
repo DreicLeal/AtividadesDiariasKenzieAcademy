@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+body {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.container {
+
+}
+header {
+    margin: 0 auto;
+    width: 100%;
+}
+header .cabecalho {
+    background: white;
+
+    display: flex;
+    padding: 0 70px;
+    height: 105px;
+    align-items: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+header .cabecalho .cabecalho_img {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .cabecalho .cabecalho_img .header_logo{
+    width: 70px;
+    height: 75px;
+}
+header .cabecalho .cabecalho_img .header_name{
+    width: 200px;
+    height: 40px;
+}
+header .cabecalho .cabecalho_div{
+    width: 70%;
+}
+header .cabecalho .cabecalho_list {
+    display: flex;
+    list-style:none;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 70px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+}
+.cabecalho_list li a{
+    text-decoration: unset;
+    
+}

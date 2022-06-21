@@ -1,0 +1,55 @@
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+   
+}
+
+
+.container{
+   
+    height: 80px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 05, 0.6);
+    box-sizing: border-box;
+    align-items: center;
+    
+}
+
+.logo {
+    font-size: 24px;
+    padding-left: 100px;
+    width: 45%;
+    display: flex;
+    color: #4C6EF5;
+    gap:20px;
+
+}
+.menu_nav{
+    width: 55%;
+    align-items: center;
+
+    
+
+
+}
+.list{
+    display: flex;
+    list-style:none;
+    color: #343A40;
+    gap: 35px;
+    flex-wrap: wrap;
+
+    
+    
+}
+
+.list a{
+    text-decoration: none;
+    
+}
+
+.list a:hover{
+    color: #4C6EF5;
+}

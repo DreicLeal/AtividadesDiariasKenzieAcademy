@@ -1,0 +1,46 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.card_photo{
+    padding: 50px;
+    max-width: 100%;
+    width: 800px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    border: 2px solid #E2E2EC;
+    box-shadow: 0px 0px -15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.person_image{
+    border-radius: 50%;
+    margin: 30px 0px;
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.nickname {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.person_description {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.description_text {
+    font-size: 20px;
+    line-height: 32px;
+}
