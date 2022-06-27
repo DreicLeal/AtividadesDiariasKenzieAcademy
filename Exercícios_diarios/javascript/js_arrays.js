@@ -33,7 +33,7 @@ function qualTipoDeElemento(lista, posicao) {
     */
 
 //Exercicio 3
-
+/*
 function testaPosicao(lista, posicao){
     for (let i = 0; i <= carrinhoDeCompras.length; i++){
         if(lista[i] == "Vou ser Dev" && posicao == 0){
@@ -53,6 +53,8 @@ function testaPosicao(lista, posicao){
    "Vou ser Dev"
   ]
   testaPosicao(carrinhoDeCompras, 0)
+*/
+
 
 //Exercicio 2
 /*
