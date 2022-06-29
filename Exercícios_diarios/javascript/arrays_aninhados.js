@@ -77,7 +77,7 @@ function contaA(vogalA){
 console.log(contaA('abracadabra'))*/
 
 //Exercício 7
-/*
+
 function mediaArray(media){
     let soma=0;
     let nArray = []
@@ -98,7 +98,7 @@ let array = [-1, 5 ,10 ,-5 ,20,14,6,-10]
 
 
 console.log(mediaArray(array))
-*/
+
 
 //Exercício 6
 /*

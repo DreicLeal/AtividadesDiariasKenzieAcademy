@@ -1,4 +1,43 @@
 
+
+
+function evenAndOdd(arr){
+    let even = []
+    let odd = []
+    for(i; i < arr.length; i++){
+      if(arr[i] % 2 == 0){
+      even.push(arr[i])
+      }else{
+      odd.push(arr[i])
+      }
+    }
+    if(even.length > odd.length){
+        return countMyArr(even, true)
+    }
+    return countMyArr(odd, false)
+  }
+  let i = 0
+  let listNumber = [10,12,13,15,18,21,20]
+  evenAndOdd(listNumber)
+
+  function countMyArr(valueCount, verification){
+    if(verification){
+    return console.log(`the list is even and your length is ${valueCount.length}`)
+    }
+    return console.log(`the list is odd and your length is ${valueCount.length}`)
+}  
+
+function alterList(list, position, newValue){
+    console.log(list)
+    list[position] = newValue
+    return console.log(list)
+  }
+  let index = 3
+  let novo = 48
+  alterList(listNumber,index,novo)
+
+
+/*
 function convertToFarenheit(currentType, currentValue){
 
         if(currentType == 'Celsius') {
