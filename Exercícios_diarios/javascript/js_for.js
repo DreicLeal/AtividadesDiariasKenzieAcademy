@@ -1,5 +1,5 @@
 //CodeWars conta caractere
-/*
+
 function countChar(string, char) {
     let cont = 0;
     for( i = 0; i< string.length; i++){
@@ -9,7 +9,7 @@ function countChar(string, char) {
     }
     return cont
   }
-  */
+  
 
 //CodeWars disemvowel
 /*
@@ -21,7 +21,7 @@ function disemvowel(str) {
   console.log(disemvowel('abracadabrA'))
 */
 
-/*
+
 //CodeWars vowel count
 function getCount(str) {
     let count = 0;
@@ -36,7 +36,7 @@ function getCount(str) {
   }
   
   getCount('abracadabra')
-*/
+
 //CodeWars cooking eggs
 /*
 function cookingTime(eggs) {

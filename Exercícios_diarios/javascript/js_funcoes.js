@@ -1,10 +1,17 @@
+let str = 'quero saber se o match me retxrna'
+//let regex = /[x]/
 
+let nStr = str.match('x')
 
+console.log(nStr)
+console.log(str.length)
+
+/*
 
 function evenAndOdd(arr){
     let even = []
     let odd = []
-    for(i; i < arr.length; i++){
+    for(let i =0; i < arr.length; i++){
       if(arr[i] % 2 == 0){
       even.push(arr[i])
       }else{
@@ -16,7 +23,7 @@ function evenAndOdd(arr){
     }
     return countMyArr(odd, false)
   }
-  let i = 0
+  
   let listNumber = [10,12,13,15,18,21,20]
   evenAndOdd(listNumber)
 
@@ -28,14 +35,13 @@ function evenAndOdd(arr){
 }  
 
 function alterList(list, position, newValue){
-    console.log(list)
     list[position] = newValue
     return console.log(list)
   }
   let index = 3
   let novo = 48
   alterList(listNumber,index,novo)
-
+*/
 
 /*
 function convertToFarenheit(currentType, currentValue){

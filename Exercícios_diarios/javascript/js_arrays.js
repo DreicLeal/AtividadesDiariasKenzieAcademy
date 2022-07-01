@@ -20,7 +20,7 @@ assentoPremiado(passageiros,random);
 */
 
 //Exercicio 4
-/*
+
 function qualTipoDeElemento(lista, posicao) {
      
     if(typeof(lista[posicao]) == "number"){
@@ -30,10 +30,10 @@ function qualTipoDeElemento(lista, posicao) {
     let tiposDiversos =[1.5,"String",true,10]
   
     qualTipoDeElemento(tiposDiversos, 0)
-    */
+    
 
 //Exercicio 3
-/*
+
 function testaPosicao(lista, posicao){
     for (let i = 0; i <= carrinhoDeCompras.length; i++){
         if(lista[i] == "Vou ser Dev" && posicao == 0){
@@ -53,7 +53,7 @@ function testaPosicao(lista, posicao){
    "Vou ser Dev"
   ]
   testaPosicao(carrinhoDeCompras, 0)
-*/
+
 
 
 //Exercicio 2
