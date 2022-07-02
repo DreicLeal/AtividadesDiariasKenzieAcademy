@@ -1,5 +1,19 @@
-//Exercicio 3 Convert To Array S5-15
+//Exercicio 4 S5-16 Utilizando métodos em lista de usuários
+function analyticsData(nome,arr){
+    for(let i =0;i<arr.length;i++){
+        if(nome === arr[i]){
+            return(`O usuário ${nome} existe na lista e está na ${i+1}° posição`)
+        }
+    }
+    arr.push(nome)
+    return `Como o usuário ${nome} não foi encontrado, foi inserido dentro da lista, segue a nova estrutura:\n [${arr}]`
+}
+let datas = ["João", "Matheus", "Julia", "Lucas", "Carlos"]
+console.log(analyticsData("Carlos", datas))
 
+
+//Exercicio 3 Convert To Array S5-15
+/*
 function convertToArray(nArray){
     list = []
     list = nArray.split(',')
@@ -27,7 +41,6 @@ function pneumoultra(reverse){
         invert +=reverse[i]
 
     }return invert.toUpperCase()
-}
 
 let word = 'Pneumoultramicroscopicossilicovulcanoconiótico'
 console.log(pneumoultra(word))
