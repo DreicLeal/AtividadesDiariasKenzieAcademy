@@ -9,8 +9,15 @@ function convertToArray(nArray){
 
 let str = "Verifcar se está conectado na energia,Verificar se o monitor está conectado na energia, Verificar se todos os cabos estão conectados, Apertar o botão de power, Esperar tela acender, usar"
 console.log(convertToArray(str))
-function orderToDo()
+function orderToDo(order){
+    let strOrder = ``
+    for(let i=0;i<order.length;i++){
+        strOrder +=`${i+1}º- ${order[i]}\n`
+    }return strOrder
+}
+console.log(orderToDo(convertToArray(str)))
 
+/*
 //Exercicio 2 Palavra MalucaS5-10
 
 function pneumoultra(reverse){
@@ -41,7 +48,6 @@ console.log(oPorY(pneumoultra(word)))
 
 function repeat (remove){
     let noRepeat = ''
-   // let upper = noRepeat.replace(noRepeat[0],noRepeat[0].toUpperCase())
     for(let i = 0;i<remove.length;i++){
         if(!noRepeat.includes(remove[i])){
             noRepeat +=remove[i].toLowerCase()
