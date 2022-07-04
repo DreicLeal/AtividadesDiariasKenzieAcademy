@@ -1,4 +1,17 @@
 //Exercicio 4 S5-16 Utilizando métodos em lista de usuários
+
+function monkeyCount(n) {
+    // your code here
+
+      let monkey =[]
+      for(let i =1;i<=n.length;i++){
+        monkey.push(i)
+      }return monkey
+    }
+let arr = [1, 2, 3, 4, 5]
+console.log(monkeyCount(arr))
+
+/*
 function analyticsData(nome,arr){
     for(let i =0;i<arr.length;i++){
         if(nome === arr[i]){
@@ -10,7 +23,7 @@ function analyticsData(nome,arr){
 }
 let datas = ["João", "Matheus", "Julia", "Lucas", "Carlos"]
 console.log(analyticsData("Carlos", datas))
-
+*/
 
 //Exercicio 3 Convert To Array S5-15
 /*
