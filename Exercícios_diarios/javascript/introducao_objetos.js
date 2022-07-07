@@ -1,28 +1,10 @@
-function Hero(name) {
-    // add default values here
-    let prototype = {
-        name: name,
-        position: '00',
-        health: 100,
-        damage: 5,
-        experience: 0,
-    }
-    //console.log(prototype.name)
-    if (prototype.name === undefined) {
-        prototype.name = 'Hero'
-
-    }
-     console.log(prototype)
-}
-
-Hero()
-/* let carro = {
+let carro = {
     marca: 'Ford',
     ano: 2010,
     modelo: 'KA',
     cor: 'Azul',
-    donos: []   
-  }
+    donos: []
+}
 
 let pessoa = {
     nome: 'Dreic',
@@ -39,23 +21,23 @@ let pessoa2 = {
     cidade: 'Salvador',
     estado: 'Bahia',
     logradouro: 'Rua da Paz',
-}  
+}
 
 let escola = {
-    nome:'Kenzie',
-    cnpj:'19807643520',
+    nome: 'Kenzie',
+    cnpj: '19807643520',
     area: 'TI',
-    cidade:"Curitiba",
-    estado:'Paraná',
+    cidade: "Curitiba",
+    estado: 'Paraná',
     logradouro: 'Rua sem nome',
     curso: 'Full Stack',
 }
 
 let curso = {
-    nome:'Full stack',
+    nome: 'Full stack',
     duracao: 03,
     turma: 13,
-    mosulos: ['M1','M2','M3','M4','M5','M6'],
+    mosulos: ['M1', 'M2', 'M3', 'M4', 'M5', 'M6'],
 }
 
 let endereco = {
@@ -66,9 +48,9 @@ let endereco = {
 }
 
 let turma = {
-    professores:['Hudson','Dorival','Thiago'],
-    alunos: [pessoa,pessoa2],
+    professores: ['Hudson', 'Dorival', 'Thiago'],
+    alunos: [pessoa, pessoa2],
     dInicio: '10/05/2022',
     formatura: '10/05/2023',
 }
-console.log(turma.alunos[1]) */
+console.log(turma.alunos[1])
