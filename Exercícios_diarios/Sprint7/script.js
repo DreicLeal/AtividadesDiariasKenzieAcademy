@@ -8,17 +8,16 @@ li.innerText = 'Repetir e repetir'
 main.appendChild(ul)
 ul.appendChild(li)
 
-
 //Kata 6
 /* const repetir = document.createElement('span')
 repetir.innerText = 'repetir e repetir'
 document.getElementById('root').appendChild(repetir) */
 
-
 //Kata 5
 /* const repetir = document.createElement('span')
 repetir.innerText = 'preciso repetir'
 console.log(repetir) */
+
 // Kata4
 /* const repetir = document.createElement('span')
 console.log(repetir) */
@@ -31,6 +30,7 @@ container.innerText = 'repetir mais' */
 /* const container = document.getElementById('root')
 container.innerText = 'repetir'
 console.log(container) */
+
 //Kata 1
 /* const container = document.getElementById('root')
 console.log(container) */
