@@ -1,0 +1,84 @@
+.div-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
+}
+
+main {
+    box-sizing: border-box;
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.insert-task {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    padding: 20px 20px;
+}
+
+.fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fields input {
+    border-radius: 6px;
+    border: unset;
+    padding: 15px;
+    width: 250px;
+    background: #F1F3F5;
+}
+
+.fields select {
+    border-radius: 6px;
+    border: unset;
+    padding: 15px;
+    width: 250px;
+    background: #F1F3F5;
+}
+
+.insert-task form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.insert-task form button {
+    background-color: #3B5BDB;
+    color: #FFFFFF;
+    border: unset;
+    border-radius: 6px;
+    height: 40px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    overflow-y: auto;
+    height: 200px;
+    padding-left: 0;
+
+}
+
+.tarefas {
+    margin-top: 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+.li-style {
+    border-radius: 6px;
+    font-size: 14px;
+    width: 85%;
+    font-weight: lighter;
+    background-color: #F1F3F5;
+    padding: 15px 30px;
+}
