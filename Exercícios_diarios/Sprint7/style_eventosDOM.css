@@ -10,8 +10,6 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: #494949;
-
-
 }
 
 .styleCardName {
@@ -34,7 +32,7 @@ body {
     border-radius: 5px;
     width: 90%;
     height: 13%;
-    font-size: 48px;    
+    font-size: 48px;
 }
 
 li {
@@ -49,8 +47,15 @@ li {
     border-radius: 10px;
 }
 
+.stylePrecoLiq {
+    font-size: 40px;
+    color: green;
+}
+
+
 .styleCardDistribuidor {
     color: black;
     font-size: 28px;
     font-weight:lighter;
+    text-decoration: none;
 }

@@ -17,29 +17,36 @@ let produto = {
 
   let tSpanNome          = document.createElement('span')
   let tSpanValor         = document.createElement('span')
-  let tALiq              = document.createElement('a')
-  let tSpanDistribuidor  = document.createElement('span')
+  let tSpanLiq           = document.createElement('span')
+  let tADistribuidor     = document.createElement('a')
   let tPrecoLiq          = document.createElement('span')
-  tALiq.href = '#'
-
+  tADistribuidor.href    = 'https://kenzie.com.br/'
 
   tSpanNome.classList.add('styleCardName')
   tSpanValor.classList.add('styleCardPrice')
-  tALiq.classList.add('styleCardLiq')
-  tSpanDistribuidor.classList.add('styleCardDistribuidor')
+  tSpanLiq.classList.add('styleCardLiq')
+  tADistribuidor.classList.add('styleCardDistribuidor')
   tPrecoLiq.classList.add('stylePrecoLiq')
 
   tSpanNome.innerText         = nome
   tSpanValor.innerText        = valor +',00'
-  tALiq.innerText             = ('Em liquidação')
-  tSpanDistribuidor.innerText = (`Fabricante: ${distribuidor}`)
-  tPrecoLiq.innerText         = (`Hoje apenas: ${precoLiq}`)
-  console.log(tPrecoLiq)
+  tSpanLiq.innerText          = 'Em liquidação'
+  tADistribuidor.innerText    = (`Fabricante: ${distribuidor}`)
+  tPrecoLiq.innerText         = (``)
 
-  tALiq.addEventListener('click', function(){
-    console.log("Hello World")
+  tSpanLiq.addEventListener('click', function(){
+    if(liq == true){
+      tPrecoLiq.innerText == (``) ?
+      tPrecoLiq.innerText = (`Hoje apenas: ${precoLiq}`) :
+      tPrecoLiq.innerText = (``)
+    }
+  })
+  tADistribuidor.addEventListener('click',function(event){
+    liq == true?
+    event.preventDefault():
+    event
   })
 
   body.appendChild(ul)
   ul.appendChild(li)
-  li.append(tSpanNome, tSpanValor, tALiq, tSpanDistribuidor)
+  li.append(tSpanNome, tSpanValor, tSpanLiq, tPrecoLiq,  tADistribuidor)
