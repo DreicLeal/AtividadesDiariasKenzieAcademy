@@ -24,7 +24,7 @@
             <h2>Inserir Tarefa</h2>
             <form>
                 <div class="fields">
-                    <input type="text" value="" placeholder="Digite a tarefa">
+                    <input class="inputField" type="text" value="" placeholder="Digite a tarefa" required>
                     <select name="priority" id="" required>
                         <option value="">Atribua uma prioridade</option>
                         <option value="urgente">Urgente</option>
@@ -32,17 +32,12 @@
                         <option value="normal">Normal</option>
                     </select>
                 </div>
-                <button type="submit">Adicionar tarefa</button>
+                <button class ='addTask' type="submit">Adicionar tarefa</button>
             </form>
         </div>
         <div class="taskList">
             <h2>Tarefas</h2>
-<!--            <ul>
-                <li class="li-style">Lavar Louça</li>
-                <li class="li-style">Ir Caminhar</li>
-                <li class="li-style">Depositar dinheiro</li>
-                <li class="li-style">Pagar Contas</li>
-            </ul> -->
+
         </div>
     </main>
     <script src="object_array.js"></script>

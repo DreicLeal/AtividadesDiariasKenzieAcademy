@@ -3,40 +3,77 @@ let ulTarefa = document.createElement('ul')
 divTarefa.appendChild(ulTarefa)
 
 
-function listaTarefas(listaDeProdutos) {
+let inputField = document.querySelector('.inputField')
+let priority = document.querySelector('select')
+let btn = document.querySelector('.addTask')
 
-    for (let i = 0; i < listaDeProdutos.length; i++) {
-        let taskTipo = listaDeProdutos[i].tipo
+let urgentTasks = []
+let priorityTasks = []
+let normalTasks = []
 
-        if (taskTipo == 'urgente') {
+btn.addEventListener('click', function () {
+    let fieldValue = inputField.value.trim()
+    let pValue = priority.value
+    if (fieldValue !== "" && pValue !== "") {
+        if(pValue == 'urgente'){
 
-            let liTask = document.createElement('li')
-            liTask.classList.add('li-style')
-            liTask.innerText = listaDeProdutos[i].titulo
-            ulTarefa.appendChild(liTask)
+            let nTask = {}
+                nTask.titulo = fieldValue,
+                nTask.tipo = pValue
+            
+            urgentTasks.unshift(nTask)
+            inputField.value = ''
+            priority.value = '' 
+        }else if(pValue == 'prioritario'){
+
+            let nTask = {}
+                nTask.titulo = fieldValue,
+                nTask.tipo = pValue
+            
+            priorityTasks.unshift(nTask)
+            inputField.value = ''
+            priority.value = '' 
+        }else if(pValue == 'normal'){
+
+            let nTask = {}
+                nTask.titulo = fieldValue,
+                nTask.tipo = pValue
+            
+            normalTasks.unshift(nTask)
+            inputField.value = ''
+            priority.value = '' 
         }
     }
-    for (let i = 0; i < listaDeProdutos.length; i++) {
-        let taskTipo = listaDeProdutos[i].tipo
+    assemble(tasks)
+})
 
-        if (taskTipo == 'prioritário') {
-
-            let liTask = document.createElement('li')
-            liTask.classList.add('li-style')
-            liTask.innerText = listaDeProdutos[i].titulo
-            ulTarefa.appendChild(liTask)
+function selectTasks(sTask,urgent,priority,norm){
+    for(let i=0;i<sTask.length;i++){
+        let type = sTask[i].tipo
+        if(type == 'urgente'){
+            urgent.unshift(sTask[i])
+        }else if(type == 'prioritário'){
+            priority.unshift(sTask[i])
+        }else if(type == 'normal'){
+            norm.unshift(sTask[i])
         }
+
+        console.log(urgent)
+        console.log(priority)
+        console.log(norm)
     }
-    for (let i = 0; i < listaDeProdutos.length; i++) {
-        let taskTipo = listaDeProdutos[i].tipo
 
-        if (taskTipo == 'normal') {
+}
+selectTasks(tasks, urgentTasks, priorityTasks, normalTasks)
 
-            let liTask = document.createElement('li')
-            liTask.classList.add('li-style')
-            liTask.innerText = listaDeProdutos[i].titulo
-            ulTarefa.appendChild(liTask)
-        }
+function assemble(arrTask){
+    for(let i=0; i<arrTask.length;i++){
+        let liTask = document.createElement('li')
+        liTask.classList.add('li-style')
+        liTask.innerText = arrTask[i].titulo
+        ulTarefa.appendChild(liTask)
     }
 }
-listaTarefas(tasks)
+assemble(urgentTasks)
+assemble(priorityTasks)
+assemble(normalTasks)
